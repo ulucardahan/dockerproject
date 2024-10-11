@@ -16,7 +16,7 @@ Bu proje, Docker kullanarak WordPress, Nginx, MySQL ve PHP-FPM ile çalışan bi
 - [Visual Studio Code](https://code.visualstudio.com/) (opsiyonel, kod düzenleme ve Docker container yönetimi için kullanılabilir.)
 - Yerel ortamda `kendi alan adınızı` kullanmak için `hosts` dosyanıza aşağıdaki satırı ekleyin:
   
-  127.0.0.1 test.uluc.me
+  127.0.0.1 "kendi alan adınız"
 
 Adım Adım Kurulum;
 
