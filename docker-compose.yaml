@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  db:
+    image: mysql:8
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: YOUR_ROOT_PASSWORD
+      MYSQL_DATABASE: YOUR_DATABASE_NAME
+      MYSQL_USER: YOUR_USER_NAME
+      MYSQL_PASSWORD: YOUR_PASSWORD
+    ports:
+      - "3306:3306"
+    volumes:  
+      - /opt/database:/var/lib/mysql
+  wordpress:
+    image: ardahanuluc/testdocker:v1.1
+    restart: always
+    ports:
+      - 80:80
