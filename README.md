@@ -13,9 +13,10 @@ Bu proje, Docker kullanarak WordPress, Nginx, MySQL ve PHP-FPM ile çalışan bi
 ### Gereksinimler
 
 - [Docker](https://www.docker.com/get-started) ve [Docker Compose](https://docs.docker.com/compose/install/) yüklü olmalıdır.
-- Yerel ortamda `kendi alan adınızı` kullanmak için `hosts` dosyanıza aşağıdaki satırı ekleyin;
+- [Visual Studio Code](https://code.visualstudio.com/) (opsiyonel, kod düzenleme ve Docker container yönetimi için kullanılabilir.)
+- Yerel ortamda `kendi alan adınızı` kullanmak için `hosts` dosyanıza aşağıdaki satırı ekleyin:
   
-  127.0.0.1 "kendi alan adınız".
+  127.0.0.1 test.uluc.me
 
 Adım Adım Kurulum;
 
