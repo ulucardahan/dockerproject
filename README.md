@@ -20,7 +20,9 @@ Bu proje, Docker kullanarak WordPress, Nginx, MySQL ve PHP-FPM ile çalışan bi
 Adım Adım Kurulum;
 
 1- Bu repoyu yerel bilgisayarınıza klonlayın.
+
 2- Kişisel düzenlemelerinizi conf. dosyaları içerisinde yapın.
+
 3- Docker image oluşturun.
+
 4- Docker Compose ile servisleri başlatın.
-  
