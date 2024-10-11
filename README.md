@@ -18,6 +18,7 @@ Bu proje, Docker kullanarak WordPress, Nginx, MySQL ve PHP-FPM ile çalışan bi
   127.0.0.1 "kendi alan adınız".
 
 Adım Adım Kurulum;
+
 1- Bu repoyu yerel bilgisayarınıza klonlayın.
 2- Kişisel düzenlemelerinizi conf. dosyaları içerisinde yapın.
 3- Docker image oluşturun.
