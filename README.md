@@ -1,29 +1,38 @@
 # dockerproject
-# WordPress, Nginx, MySQL, PHP ile Docker Kurulumu
+# WordPress, Nginx, MySQL, PHP Setup with Docker
 
-Bu proje, Docker kullanarak WordPress, Nginx, MySQL ve PHP-FPM ile çalışan bir web ortamını yerel bilgisayarınızda kurmak için gereken yapılandırma dosyalarını içerir. 
+This project contains the necessary configuration files to set up a local web environment running WordPress, Nginx, MySQL, and PHP-FPM using Docker.
 
-## İçerik
+## Contents
 
-- **Dockerfile**: Ubuntu tabanlı bir Docker image oluşturur, gerekli paketleri yükler ve Nginx, PHP-FPM ile WordPress kurulumunu yapar.
-- **docker-compose.yaml**: MySQL ve WordPress servislerini yönetmek için kullanılır.
-- **wptest.conf**: Nginx yapılandırma dosyasıdır.
-- **wp-setup.sh**: WordPress'i indirip, gerekli ayarlamaları yapan bash betiğidir.
+- **Dockerfile**: Builds a Docker image based on Ubuntu, installs the required packages, and sets up Nginx, PHP-FPM, and WordPress.
+- **docker-compose.yaml**: Manages MySQL and WordPress services.
+- **wptest.conf**: Nginx configuration file.
+- **wp-setup.sh**: A bash script that downloads and configures WordPress.
 
-### Gereksinimler
+## Requirements
 
-- [Docker](https://www.docker.com/get-started) ve [Docker Compose](https://docs.docker.com/compose/install/) yüklü olmalıdır.
-- [Visual Studio Code](https://code.visualstudio.com/) (opsiyonel, kod düzenleme ve Docker container yönetimi için kullanılabilir.)
-- Yerel ortamda `kendi alan adınızı` kullanmak için `hosts` dosyanıza aşağıdaki satırı ekleyin:
-  
-  127.0.0.1 "kendi alan adınız"
+- Docker and Docker Compose must be installed.
+- Visual Studio Code (optional, can be used for code editing and Docker container management).
+- To use your custom domain locally, add the following line to your `hosts` file:
 
-Adım Adım Kurulum;
+  ```bash
+  127.0.0.1 your-domain-name
 
-1- Bu repoyu yerel bilgisayarınıza klonlayın.
+## Step-by-Step Installation
 
-2- Kişisel düzenlemelerinizi conf. dosyaları içerisinde yapın.
-
-3- Docker image oluşturun.
-
-4- Docker Compose ile servisleri başlatın.
+1- Clone this repository to your local machine.
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+```
+2- Customize the configuration files as needed for your personal setup.
+3- Build the Docker image.
+```bash
+docker build -t your-image-name .
+```
+4- Start the services with Docker Compose.
+```bash
+docker-compose up -d
+```
+After completing these steps, you should be able to access your WordPress site by navigating to http://your-domain-name in your browser.
