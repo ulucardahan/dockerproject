@@ -35,4 +35,4 @@ docker build -t your-image-name .
 ```bash
 docker-compose up -d
 ```
-After completing these steps, you should be able to access your WordPress site by navigating to http://your-domain-name in your browser.
+After completing these steps, you should be able to access your WordPress site by navigating to "http://your-domain-name" in your browser.
